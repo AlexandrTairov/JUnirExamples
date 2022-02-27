@@ -9,9 +9,6 @@ import utils.MessageUtilTest;
 public class TestRunner {
     public static void main(String[] args) {
 
-        /*Result result = JUnitCore.runClasses(MessageUtilTest.class, TestAssertions.class,
-                TestCaseTest.class, TestResultTest.class, TestEmployeeLogic.class);*/
-
         Result result = JUnitCore.runClasses(JunitTestSuite.class);
 
         for (Failure failure : result.getFailures()) {

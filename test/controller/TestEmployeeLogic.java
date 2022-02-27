@@ -20,13 +20,11 @@ public class TestEmployeeLogic {
         employee.setMonthlySalary(8000);
     }
 
-    //test to check appraisal
     @Test
     public void testCalculateRating() {
         assertEquals(500, empBusinessLogic.calculateRating(employee), 0.0);
     }
 
-    // test to check yearly salary
     @Test
     public void testCalculateYearlySalary() {
         assertEquals(96000, empBusinessLogic.calculateYearlySalary(employee), 0.0);

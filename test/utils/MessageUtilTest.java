@@ -1,8 +1,12 @@
 package utils;
 
+// JUnit 4
 import org.junit.Test;
 
+// JUnit Jupiter (part of JUnit 5)
+//import org.junit.jupiter.api.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 public class MessageUtilTest {
 
@@ -10,6 +14,7 @@ public class MessageUtilTest {
     public void testPrintMessage() {
         System.out.println("Inside testPrintMessage()");
         String message = "Message text";
+//        fail("Fail method");
         assertEquals(message, new MessageUtil(message).printMessage());
     }
 
